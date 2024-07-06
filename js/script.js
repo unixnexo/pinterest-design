@@ -9,79 +9,48 @@ const masonry = new Masonry( grid, {
 });
 
 
-
-
-
-////// test
-// const scrollContainer = document.getElementById('scrollContainer');
-// const scrollLeftBtn = document.getElementById('scrollLeft');
-// const scrollRightBtn = document.getElementById('scrollRight');
-
-// function checkScroll() {
-//     if (scrollContainer.scrollLeft <= 0) {
-//         scrollLeftBtn.classList.add('hidden');
-//     } else {
-//         scrollLeftBtn.classList.remove('hidden');
-//     }
-
-//     if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
-//         scrollRightBtn.classList.add('hidden');
-//     } else {
-//         scrollRightBtn.classList.remove('hidden');
-//     }
-// }
-
-// scrollLeftBtn.addEventListener('click', () => {
-//     scrollContainer.scrollBy({
-//         left: -200,
-//         behavior: 'smooth'
-//     });
-// });
-
-// scrollRightBtn.addEventListener('click', () => {
-//     scrollContainer.scrollBy({
-//         left: 200,
-//         behavior: 'smooth'
-//     });
-// });
-
-// scrollContainer.addEventListener('scroll', checkScroll);
-
-// // Initial check
-// checkScroll();
-
-
-
+/**
+ * slider for the "more ideas for ..." section
+ */
 const scrollContainer = document.getElementById('scrollContainer');
 const scrollLeftBtn = document.getElementById('scrollLeft');
 const scrollRightBtn = document.getElementById('scrollRight');
+const moreIdeaSecCon = document.querySelector('#moreIdeaSecCon');
 
 function checkScroll() {
-    scrollLeftBtn.classList.toggle('hidden', scrollContainer.scrollLeft <= 0);
+  const atStart = scrollContainer.scrollLeft <= 0;
+  const atEnd = scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 1;
 
-    const atEnd = scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 1;
-    scrollRightBtn.classList.toggle('hidden', atEnd);
+  scrollLeftBtn.classList.toggle('hidden', atStart);
+  scrollRightBtn.classList.toggle('hidden', atEnd);
+
+  moreIdeaSecCon.classList.toggle('no-before', atStart);
+  moreIdeaSecCon.classList.toggle('no-after', atEnd);
 }
 
 scrollLeftBtn.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-        left: -200,
-        behavior: 'smooth'
-    });
-    setTimeout(checkScroll, 300); // Check after the scroll action
+  scrollContainer.scrollBy({
+    left: -200,
+    behavior: 'smooth'
+  });
+  setTimeout(checkScroll, 300);
 });
 
 scrollRightBtn.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-        left: 200,
-        behavior: 'smooth'
-    });
-    setTimeout(checkScroll, 300); // Check after the scroll action
+  scrollContainer.scrollBy({
+    left: 200,
+    behavior: 'smooth'
+  });
+  setTimeout(checkScroll, 300);
 });
 
 scrollContainer.addEventListener('scroll', checkScroll);
 
 // Initial check
 checkScroll();
+window.addEventListener('resize', checkScroll);
 
+
+
+////// test
 

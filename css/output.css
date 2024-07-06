@@ -763,6 +763,10 @@ video {
   background-color: #1c1b1b32;
 }
 
+.bg-\[\#1e232759\] {
+  background-color: #1e232759;
+}
+
 .bg-\[\#86726a59\] {
   background-color: #86726a59;
 }
@@ -796,10 +800,6 @@ video {
 
 .bg-white\/80 {
   background-color: rgb(255 255 255 / 0.8);
-}
-
-.bg-\[\#1e232759\] {
-  background-color: #1e232759;
 }
 
 .p-2 {
@@ -935,6 +935,14 @@ input[type="search"]::-webkit-search-results-decoration {
   background: linear-gradient(to right, rgb(255,255,255,0), white);
 }
 
+#moreIdeaSecCon.no-before::before {
+  content: none;
+}
+
+#moreIdeaSecCon.no-after::after {
+  content: none;
+}
+
 /****** test *******/
 
 img {
@@ -1040,6 +1048,11 @@ img {
   background-color: #0000000f;
 }
 
+.hover\:bg-\[\#AAACAE\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 172 174 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-\[\#B60000\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(182 0 0 / var(--tw-bg-opacity));
@@ -1068,11 +1081,6 @@ img {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#AAACAE\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(170 172 174 / var(--tw-bg-opacity));
 }
 
 .hover\:\*\:bg-\[\#0000000f\] > *:hover {

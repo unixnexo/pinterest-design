@@ -46,6 +46,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background: linear-gradient(to right, rgb(255,255,255,0), white);
 }
 
+#moreIdeaSecCon.no-before::before {
+  content: none;
+}
+
+#moreIdeaSecCon.no-after::after {
+  content: none;
+}
 
 
 
