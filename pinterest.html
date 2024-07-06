@@ -6,14 +6,26 @@
     <link rel="stylesheet" href="./css/output.css">
     <title>Pinterest</title>
 </head>
-<body>
+<body class="font-medium">
 
     <header>
 
-        <nav class="flex *:grow m-4">
+        <nav class="flex m-4">
 
-            <div>sfsadf</div>
-            <div>
+            <div class="flex items-center space-x-1">
+                <!-- pinterest icon -->
+                <div class="hover:bg-[#0000000f] p-3 rounded-full cursor-pointer">
+                    <svg height="24" role="img" viewBox="0 0 24 24" width="24" fill="#E60023">
+                        <path d="M7.55 23.12c-.15-1.36-.04-2.67.25-3.93L9 14.02a7 7 0 0 1-.34-2.07c0-1.68.8-2.88 2.08-2.88.88 0 1.53.62 1.53 1.8q0 .57-.22 1.28l-.53 1.73q-.15.5-.15.91c0 1.2.92 1.88 2.09 1.88 2.08 0 3.57-2.16 3.57-4.96 0-3.12-2.04-5.11-5.06-5.11-3.36 0-5.49 2.19-5.49 5.23 0 1.23.38 2.37 1.11 3.15-.24.4-.5.48-.88.48-1.2 0-2.34-1.7-2.34-4 0-3.99 3.2-7.16 7.68-7.16 4.7 0 7.66 3.28 7.66 7.33 0 4.07-2.88 7.13-5.98 7.13a3.8 3.8 0 0 1-3.07-1.47l-.61 2.5c-.33 1.28-.83 2.5-1.62 3.67A12 12 0 0 0 24 11.99 12 12 0 1 0 7.55 23.12"></path>
+                    </svg>
+                </div>
+                <button class="bg-black rounded-full py-3 px-4 text-white font-bold">Home</button>
+                <button class="bg-transparent rounded-full py-3 px-4">Create</button>
+
+            </div>
+
+            <!-- search  -->
+            <div class="grow mx-2">
                 <form class="relative flex items-center">
                     <!-- search icon -->
                     <svg height="16" role="img" viewBox="0 0 24 24" width="16" fill="#767676" class="absolute inset-x-4">
@@ -28,13 +40,136 @@
                     </div>
                 </form>
             </div>
-            <div>safsdf</div>
+
+            <div class="flex items-center *:rounded-full [&>*:not(:last-child)]:size-[48px] hover:*:bg-[#0000000f] *:flex *:items-center *:justify-center">
+                <!-- ring bell icon -->
+                <div>
+                    <svg height="24" fill="#767676" viewBox="0 0 24 24" width="24">
+                        <path d="M19 7v6.17A10 10 0 0 1 22 19H2a10 10 0 0 1 3-5.83V7a7 7 0 1 1 14 0m-4 14a3 3 0 1 1-6 0z"></path>
+                    </svg>
+                </div>
+
+                <!-- messages icon -->
+                <div>
+                    <svg height="24" fill="#767676" viewBox="0 0 24 24" width="24">
+                        <path d="M18 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 0a11 11 0 0 0-8.52 17.95l-1.46 5.43a.5.5 0 0 0 .73.55l5.08-2.75A10.98 10.98 0 0 0 23 11 11 11 0 0 0 12 0"></path>
+                    </svg>
+                </div>
+
+                <!-- profile pic icon -->
+                <div>
+                    <img src="./img/prof.png" class="rounded-full p-2.5" alt="profile picture" />
+                </div>
+
+                <!-- down arrow icon -->
+                 <div class="size-[25px]">
+                    <svg height="12" fill="#767676" viewBox="0 0 24 24" width="12">
+                        <path d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0"></path>
+                    </svg>
+                </div>
+            </div>
 
         </nav>
 
     </header>
     
     <main>
+
+        <!-- more ideas for ... section -->
+        <div id="moreIdeaSecCon" class="relative flex items-center justify-center mx-3 mt-10 space-x-2 overflow-hidden">
+            <!-- left btn -->
+            <button id="scrollLeft" class="absolute flex justify-center items-center left-10 z-20 size-[48px] rounded-full bg-white/80 hover:bg-white">
+                <svg height="16" viewBox="0 0 24 24" width="16">
+                    <path d="M15.78 24a2.2 2.2 0 0 1-1.58-.66L3 12 14.2.66a2.2 2.2 0 0 1 3.15 0c.87.88.87 2.3 0 3.18L9.29 12l8.06 8.16c.87.88.87 2.3 0 3.18-.44.44-1 .66-1.57.66"></path>
+                </svg>
+            </button>
+
+            <div id="scrollContainer" class="flex space-x-2 overflow-x-auto whitespace-nowrap scrollbar-hide *:w-[300px] *:cursor-pointer *:flex *:relative *:justify-center *:items-center *:rounded-xl *:py-8 *:px-5 *:space-x-2">
+                <div class="group hover:bg-[#F6D782] bg-[#febd0d80]">
+                    <div class="w-28 *:w-[54px] *:h-[72px] *:rounded-[20px] [&>*>img]:border-2 [&>*>img]:object-cover [&>*>img]:size-full [&>*>img]:rounded-[20px]">
+                        <div class="absolute top-5 transition-transform -rotate-12 group-hover:-rotate-[20deg]">
+                            <img src="./img/12.jpg" alt="pic" />
+                        </div>
+                        <div class="absolute top-[18px] left-10 transition-transform group-hover:-translate-y-1">
+                            <img src="./img/13.jpg" alt="pic" />
+                        </div>
+                        <div class="absolute transition-transform top-5 left-14 rotate-12 group-hover:rotate-[20deg]">
+                            <img src="./img/16.jpg" alt="pic" />
+                        </div>
+                    </div>
+                    
+                    <div class="pr-10">
+                        <p>More ideas for</p>
+                        <p class="font-bold">Wallpaper</p>
+                    </div>
+                </div>
+
+                <div class="group hover:bg-[#BDBFC2] bg-[#1c1b1b32]">
+                    <div class="w-28 *:w-[54px] *:h-[72px] *:rounded-[20px] [&>*>img]:border-2 [&>*>img]:object-cover [&>*>img]:size-full [&>*>img]:rounded-[20px]">
+                        <div class="absolute top-5 transition-transform -rotate-12 group-hover:-rotate-[20deg]">
+                            <img src="./img/2.jpg" alt="pic" />
+                        </div>
+                        <div class="absolute top-[18px] left-10 transition-transform group-hover:-translate-y-1">
+                            <img src="./img/3.jpg" alt="pic" />
+                        </div>
+                        <div class="absolute transition-transform top-5 left-14 rotate-12 group-hover:rotate-[20deg]">
+                            <img src="./img/4.jpg" alt="pic" />
+                        </div>
+                    </div>
+                    
+                    <div class="pr-10">
+                        <p>More ideas for</p>
+                        <p class="font-bold">Amazed by</p>
+                    </div>
+                </div>
+                
+                <div class="group hover:bg-[#CEC8C5] bg-[#86726a59]">
+                    <div class="w-28 *:w-[54px] *:h-[72px] *:rounded-[20px] [&>*>img]:border-2 [&>*>img]:object-cover [&>*>img]:size-full [&>*>img]:rounded-[20px]">
+                        <div class="absolute top-5 transition-transform -rotate-12 group-hover:-rotate-[20deg]">
+                            <img src="./img/21.jpg" alt="pic" />
+                        </div>
+                        <div class="absolute top-[18px] left-10 transition-transform group-hover:-translate-y-1">
+                            <img src="./img/1.jpg" alt="pic" />
+                        </div>
+                        <div class="absolute transition-transform top-5 left-14 rotate-12 group-hover:rotate-[20deg]">
+                            <img src="./img/24.jpg" alt="pic" />
+                        </div>
+                    </div>
+                    
+                    <div class="pr-10">
+                        <p>More ideas for</p>
+                        <p class="font-bold">Fun</p>
+                    </div>
+                </div>
+
+                <div class="group hover:bg-[#AAACAE] bg-[#1e232759]">
+                    <div class="w-28 *:w-[54px] *:h-[72px] *:rounded-[20px] [&>*>img]:border-2 [&>*>img]:object-cover [&>*>img]:size-full [&>*>img]:rounded-[20px]">
+                        <div class="absolute top-5 transition-transform -rotate-12 group-hover:-rotate-[20deg]">
+                            <img src="./img/6.jpg" alt="pic" />
+                        </div>
+                        <div class="absolute top-[18px] left-10 transition-transform group-hover:-translate-y-1">
+                            <img src="./img/7.jpg" alt="pic" />
+                        </div>
+                        <div class="absolute transition-transform top-5 left-14 rotate-12 group-hover:rotate-[20deg]">
+                            <img src="./img/8.jpg" alt="pic" />
+                        </div>
+                    </div>
+                    
+                    <div class="pr-10">
+                        <p>More ideas for</p>
+                        <p class="font-bold">girls</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right btn -->
+            <button id="scrollRight" class="absolute flex justify-center items-center right-10 z-20 size-[48px] rounded-full bg-white/80 hover:bg-white">
+                <svg height="16" viewBox="0 0 24 24" width="16">
+                    <path d="M6.65.66c-.87.88-.87 2.3 0 3.18L14.71 12l-8.06 8.16c-.87.88-.87 2.3 0 3.18a2.2 2.2 0 0 0 3.14 0L21 12 9.8.66a2.2 2.2 0 0 0-3.15 0"></path>
+                </svg>
+            </button>
+        </div>
+
 
         <!-- masonry grid -->
         <div class="grid mt-10 [&>*>img]:rounded-[20px] [&>*>img]:w-[100%] mx-auto *:mb-4 *:cursor-zoom-in">
@@ -149,7 +284,6 @@
 
 
         </div>
-
 
 
     </main>
