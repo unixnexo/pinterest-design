@@ -7,16 +7,42 @@
     <title>Pinterest</title>
 </head>
 <body>
+
+    <header>
+
+        <nav class="flex *:grow m-4">
+
+            <div>sfsadf</div>
+            <div>
+                <form class="relative flex items-center">
+                    <!-- search icon -->
+                    <svg height="16" role="img" viewBox="0 0 24 24" width="16" fill="#767676" class="absolute inset-x-4">
+                        <path d="M10 16a6 6 0 1 1 .01-12.01A6 6 0 0 1 10 16m13.12 2.88-4.26-4.26a10 10 0 1 0-4.24 4.24l4.26 4.26a3 3 0 1 0 4.24-4.24"></path>
+                    </svg>
+                    <input type="search" placeholder="Search" class="w-full bg-[#F1F1F1] hover:bg-[#E1E1E1] h-[48px] rounded-[50px] px-10 border-0 focus:outline outline-4 outline-[#7FC1FF]" />
+                    <!-- X icon -->
+                    <div class="absolute flex items-center justify-center right-0 hover:bg-[#0000000f] h-[48px] w-[48px] rounded-[50px] cursor-pointer">
+                        <svg height="20" viewBox="0 0 24 24" width="20">
+                            <path d="M15.18 16.95 12 13.77l-3.18 3.18a1.25 1.25 0 0 1-1.77-1.77L10.23 12 7.05 8.82a1.25 1.25 0 0 1 1.77-1.77L12 10.23l3.18-3.18a1.25 1.25 0 1 1 1.77 1.77L13.77 12l3.18 3.18a1.25 1.25 0 0 1-1.77 1.77M24 12a12 12 0 1 0-24 0 12 12 0 0 0 24 0"></path>
+                        </svg>
+                    </div>
+                </form>
+            </div>
+            <div>safsdf</div>
+
+        </nav>
+
+    </header>
     
     <main>
 
         <!-- masonry grid -->
-        <div class="grid mt-10 [&>*>img]:rounded-[20px] [&>*>img]:w-[100%] mx-auto *:mb-4 cursor-zoom-in">
+        <div class="grid mt-10 [&>*>img]:rounded-[20px] [&>*>img]:w-[100%] mx-auto *:mb-4 *:cursor-zoom-in">
 
             <div class="grid-item relative group">
                 <img src="./img/1.jpg" alt="Pinterest images" />
                 <!-- on hover content -->
-                <div class="hidden flex-col justify-between absolute h-full top-0 pt-3 rounded-[25px] text-white font-bold w-full bg-black/50 group-hover:flex">
+                <div class="hidden flex-col justify-between absolute h-full top-0 pt-3 rounded-[20px] text-white font-bold w-full bg-black/50 group-hover:flex">
 
                     <!-- top level -->
                     <div class="flex justify-between items-center px-3">

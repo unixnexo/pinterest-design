@@ -562,8 +562,38 @@ video {
   position: relative;
 }
 
+.inset-x-4 {
+  left: 1rem;
+  right: 1rem;
+}
+
+.inset-x-20 {
+  left: 5rem;
+  right: 5rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .mx-auto {
@@ -600,9 +630,8 @@ video {
   height: 1.25rem;
 }
 
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
+.h-\[48px\] {
+  height: 48px;
 }
 
 .h-full {
@@ -613,8 +642,12 @@ video {
   width: 100%;
 }
 
-.cursor-zoom-in {
-  cursor: zoom-in;
+.w-\[48px\] {
+  width: 48px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -629,14 +662,12 @@ video {
   align-items: center;
 }
 
-.justify-between {
-  justify-content: space-between;
+.justify-center {
+  justify-content: center;
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+.justify-between {
+  justify-content: space-between;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -645,16 +676,30 @@ video {
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .self-end {
   align-self: flex-end;
 }
 
-.rounded-\[25px\] {
-  border-radius: 25px;
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
+.rounded-\[50px\] {
+  border-radius: 50px;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .bg-\[\#E60023\] {
@@ -662,8 +707,34 @@ video {
   background-color: rgb(230 0 35 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F1F1F1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity));
+}
+
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-red-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-red-800\/10 {
+  background-color: rgb(153 27 27 / 0.1);
+}
+
+.bg-\[\#0000000f\] {
+  background-color: #0000000f;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-3 {
@@ -681,6 +752,15 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -692,6 +772,41 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.outline-4 {
+  outline-width: 4px;
+}
+
+.outline-\[\#7FC1FF\] {
+  outline-color: #7FC1FF;
+}
+
+.grid-item {
+  width: 237px;
+}
+
+/* clears the ‘X’ input search from Internet Explorer */
+
+input[type=search]::-ms-clear {
+  display: none;
+  width : 0;
+  height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none;
+  width : 0;
+  height: 0;
+}
+
+/* clears the ‘X’ input search from Chrome */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
 
 img {
@@ -715,9 +830,7 @@ img {
           mask-size: 18% 70%;
 }
 
-.grid-item {
-  width: 237px;
-}
+/****** test *******/
 
 .\*\:mb-4 > * {
   margin-bottom: 1rem;
@@ -726,6 +839,14 @@ img {
 .\*\:size-8 > * {
   width: 2rem;
   height: 2rem;
+}
+
+.\*\:grow > * {
+  flex-grow: 1;
+}
+
+.\*\:cursor-zoom-in > * {
+  cursor: zoom-in;
 }
 
 .\*\:rounded-full > * {
@@ -742,11 +863,36 @@ img {
   background-color: rgb(182 0 0 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#E1E1E1\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 225 225 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#0000000f\]:hover {
+  background-color: #0000000f;
+}
+
+.focus\:hidden:focus {
+  display: none;
+}
+
+.focus\:outline:focus {
+  outline-style: solid;
+}
+
+.active\:hidden:active {
+  display: none;
+}
+
 .group:hover .group-hover\:flex {
   display: flex;
 }
 
-.group:hover .group-hover\:hidden {
+.group:focus .group-focus\:hidden {
+  display: none;
+}
+
+.group:active .group-active\:hidden {
   display: none;
 }
 
@@ -762,3 +908,4 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
