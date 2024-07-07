@@ -82,7 +82,7 @@ searchInput.addEventListener('focus', () => {
 });
 searchInput.addEventListener('blur', () => {
     // overlay content
-    main.classList.remove(mainOverlay);
+    // will get removed when the suggestion menu closes
 
     // search input
     searchInput.classList.remove(searchInputInsetSM);
@@ -122,11 +122,15 @@ document.addEventListener('click', (e) => {
     if (menu.getAttribute('data-state-menu') === 'inactive') {
       menu.classList.remove(removeClass);
       menu.setAttribute('data-state-menu', 'active');
-      btn.setAttribute('data-state', 'active');
+      if (btn) {
+        btn.setAttribute('data-state', 'active');
+      }
     } else {
       menu.classList.add(removeClass);
       menu.setAttribute('data-state-menu', 'inactive');
-      btn.setAttribute('data-state', 'inactive');
+      if (btn) {
+        btn.setAttribute('data-state', 'inactive');
+      }
     }
 
   } 
@@ -182,6 +186,91 @@ document.addEventListener('click', (e) => {
 });
 
 
+/**
+ * suggestion menu
+ */
+const suggestionSearch = document.getElementById('suggestion-search');
+document.addEventListener('click', (e) => {
+  if (e.target === searchInput) {
+    suggestionSearch.classList.remove(remove);
+    main.classList.add(mainOverlay);
+  } else if (e.target === suggestionSearch || suggestionSearch.contains(e.target)) {
+    searchInput.focus();
+    main.classList.add(mainOverlay);
+    // clicked in menu, do nothing
+  } else {
+    suggestionSearch.classList.add(remove);
+    main.classList.remove(mainOverlay);
+  }
+});
+
 
 
 ////////////test
+// const post3DotBtn = document.querySelector('.post-3dot-btn');
+// const post3DotMenu = document.querySelector('.post-3dot-menu');
+// const postOnHoverContent = document.querySelector('.post-onhover-content');
+
+// document.addEventListener('click', (e) => {
+//   if (e.target === post3DotBtn) {
+//     post3DotMenu.classList.toggle(remove);
+
+//     if (!post3DotMenu.classList.contains('hidden')) {
+//       postOnHoverContent.classList.remove('hidden');
+//       postOnHoverContent.classList.add('flex');
+//     } else {
+//       postOnHoverContent.classList.add('hidden');
+//       postOnHoverContent.classList.remove('flex');
+//     }
+//   } else if (e.target === post3DotMenu || post3DotMenu.contains(e.target)) {
+//     // on menu, do nothing
+//   } else {
+//     post3DotMenu.classList.add(remove);
+//     postOnHoverContent.classList.add('hidden');
+//     postOnHoverContent.classList.remove('flex');
+//   }
+
+// });
+
+
+const post3DotBtns = document.querySelectorAll('.post-3dot-btn');
+const post3DotMenus = document.querySelectorAll('.post-3dot-menu');
+const postOnHoverContents = document.querySelectorAll('.post-onhover-content');
+
+post3DotBtns.forEach((btn, index) => {
+  const post3DotMenu = post3DotMenus[index];
+  const postOnHoverContent = postOnHoverContents[index];
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation(); 
+
+    // Close all other menus
+    post3DotMenus.forEach((menu, i) => {
+      if (i !== index) {
+        menu.classList.add('hidden');
+        postOnHoverContents[i].classList.add('hidden');
+        postOnHoverContents[i].classList.remove('flex');
+      }
+    });
+
+    // Toggle the current menu
+    post3DotMenu.classList.toggle('hidden');
+
+    if (!post3DotMenu.classList.contains('hidden')) {
+      postOnHoverContent.classList.remove('hidden');
+      postOnHoverContent.classList.add('flex');
+    } else {
+      postOnHoverContent.classList.add('hidden');
+      postOnHoverContent.classList.remove('flex');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target !== btn && e.target !== post3DotMenu && !post3DotMenu.contains(e.target)) {
+      post3DotMenu.classList.add('hidden');
+      postOnHoverContent.classList.add('hidden');
+      postOnHoverContent.classList.remove('flex');
+    }
+  });
+});
+
