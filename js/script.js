@@ -100,6 +100,7 @@ searchInput.addEventListener('blur', () => {
 
 /**
  * menus for notification / messages / settings - on the right side of the header
+ * will change state for both menus & btns
  */
 document.addEventListener('click', (e) => {
   const removeClass = 'hidden'; 
@@ -107,17 +108,46 @@ document.addEventListener('click', (e) => {
   if (e.target.classList.contains('menu-btn')) {
     const menuId = e.target.getAttribute('data-menu');
     const menu = document.getElementById(menuId);
-    menu.classList.toggle(removeClass);
+    const btn = document.querySelector(`div[data-menu=${menuId}]`);
+
+    // Close all menus and set state to inactive
+    document.querySelectorAll('.menu').forEach(m => {
+      if (m !== menu) {
+        m.classList.add(removeClass);
+        m.setAttribute('data-state-menu', 'inactive');
+      }
+    });
+
+    if (menu.getAttribute('data-state-menu') === 'inactive') {
+      menu.classList.remove(removeClass);
+      menu.setAttribute('data-state-menu', 'active');
+    } else {
+      menu.classList.add(removeClass);
+      menu.setAttribute('data-state-menu', 'inactive');
+    }
+
+    // inactive all btns & active the current one
+    inactiveUiBtn();
+    btn.setAttribute('data-state', 'active');
   } 
   else if (e.target.closest('.menu')) {
     // Clicked inside a menu, do nothing
   } 
   else {
     document.querySelectorAll('.menu').forEach(menu => {
-      menu.classList.add(removeClass);
+      menu.classList.add(removeClass);    
     });
+
+    // inactive ui all 
+    inactiveUiBtn();
   }
 });
+
+function inactiveUiBtn() {
+  document.querySelectorAll('div[data-state]').forEach(el => {
+    el.setAttribute('data-state', 'inactive');
+  });
+}
 
 
 /**
@@ -134,6 +164,10 @@ function threeDotMenu (el) {
   });
   
 }
+
+
+
+
 
 
 ////////////test

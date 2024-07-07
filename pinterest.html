@@ -140,9 +140,9 @@
             <div class="flex items-center *:relative first:[&>*>*]:relative *:rounded-full hover:*:bg-[#0000000f] *:flex *:items-center *:justify-center first:[&>*>*]:flex first:[&>*>*]:items-center first:[&>*>*]:justify-center">
 
                 <!-- ring bell icon -->
-                <div>
-                    <div data-menu="menu1" class="group/title size-[48px] *:pointer-events-none cursor-pointer menu-btn">
-                        <svg height="24" fill="#767676" viewBox="0 0 24 24" width="24">
+                <div class="select-none">
+                    <div data-menu="menu1" data-state="inactive" class="group/title size-[48px] *:pointer-events-none cursor-pointer menu-btn data-[state=inactive]:fill-[#767676] data-[state=active]:fill-[#000000]">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
                             <path d="M19 7v6.17A10 10 0 0 1 22 19H2a10 10 0 0 1 3-5.83V7a7 7 0 1 1 14 0m-4 14a3 3 0 1 1-6 0z"></path>
                         </svg>
                         <!-- title -->
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                     <!-- menu -->
-                    <div id="menu1" class="menu absolute hidden top-[61px] -left-[204px] w-96 h-[88vh] bg-white rounded-2xl drop-shadow-2xl">
+                    <div id="menu1" data-state-menu="inactive" class="menu absolute hidden top-[61px] -left-[204px] w-96 h-[88vh] bg-white rounded-2xl drop-shadow-2xl">
                         <!-- header -->
                         <div class="sticky top-0 bg-white shadow-md text-center p-6 rounded-t-2xl">
                             <p>Updates</p>
@@ -347,19 +347,38 @@
                 </div>
 
                 <!-- messages icon -->
-                <div>
-                    <div class="group size-[48px] cursor-pointer">
-                        <svg height="24" fill="#767676" viewBox="0 0 24 24" width="24">
+                <div class="select-none">
+                    <div data-menu="menu2" data-state="inactive" class="group size-[48px] cursor-pointer menu-btn *:pointer-events-none data-[state=inactive]:fill-[#767676] data-[state=active]:fill-[#000000]">
+                        <svg height="24" viewBox="0 0 24 24" width="24">
                             <path d="M18 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 0a11 11 0 0 0-8.52 17.95l-1.46 5.43a.5.5 0 0 0 .73.55l5.08-2.75A10.98 10.98 0 0 0 23 11 11 11 0 0 0 12 0"></path>
                         </svg>
-                        <div class="absolute hidden group-hover:block top-14 bg-black text-white rounded-md p-1.5 text-xs whitespace-nowrap">
+                        <!-- title -->
+                        <div class="absolute hidden select-none touch-none z-20 group-hover:block top-14 bg-black text-white rounded-md p-1.5 text-xs whitespace-nowrap">
                             <span>Messages</span>
+                        </div>
+                    </div>
+                    <!-- menu -->
+                    <div id="menu2" data-state-menu="inactive" class="menu absolute hidden top-[61px] -left-[253px] w-96 h-[88vh] bg-white rounded-2xl drop-shadow-2xl">
+                        <!-- header -->
+                        <div class="relative p-6 text-center">
+                            <span>Inbox</span>
+                            <div class="absolute top-4 right-3 hover:bg-[#F0F0F0] rounded-full p-3">
+                                <svg height="20" viewBox="0 0 24 24" width="20">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- content -->
+                        <div class="overflow-y-auto h-3/4 [&>*:not(p)]:cursor-pointer">
+                            <p class="text-xl mb-4 px-4">Seen</p>
+                            
+
                         </div>
                     </div>
                 </div>
 
                 <!-- profile pic icon -->
-                <div class="relative group size-[48px] cursor-pointer">
+                <div class="relative group size-[48px] cursor-pointer select-none">
                     <img src="./img/prof.png" class="rounded-full p-2.5" alt="profile picture" />
                     <div class="absolute hidden group-hover:block top-14 bg-black text-white rounded-md p-1.5 text-xs whitespace-nowrap">
                         <span>Your profile</span>
