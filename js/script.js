@@ -171,3 +171,14 @@ function threeDotMenu (el) {
 
 
 ////////////test
+const inbox3Dot = document.getElementById('inbox-3-dots');
+const inbox3DotMenu = document.getElementById('inbox-3dot-menu');
+document.addEventListener('click', (e) => {
+ if(e.target === inbox3Dot) {
+  inbox3Dot.classList.toggle('is-open');
+ } else if (e.target === inbox3DotMenu || inbox3DotMenu.contains(e.target)){
+  // clicked in menu, do nothing
+ } else {
+  inbox3Dot.classList.remove('is-open');
+ }
+});
