@@ -7,6 +7,22 @@
   width: 237px;
 }
 
+/* overlay when searching */
+main::before {
+  content: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100; 
+}
+
+main.overlay::before {
+  content: 'none';
+}
+
 
 /* clears the ‘X’ input search from Internet Explorer */
 input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
@@ -59,6 +75,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 /****** test *******/
+
+
 
 
 
