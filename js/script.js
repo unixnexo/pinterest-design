@@ -205,72 +205,68 @@ document.addEventListener('click', (e) => {
 });
 
 
+/**
+ * menus on post
+ */
+let openMenu = null;
+let openContent = null;
 
-////////////test
-// const post3DotBtn = document.querySelector('.post-3dot-btn');
-// const post3DotMenu = document.querySelector('.post-3dot-menu');
-// const postOnHoverContent = document.querySelector('.post-onhover-content');
+function handleMenuToggle(btnClass, menuClass, contentClass) {
+  const buttons = document.querySelectorAll(btnClass);
+  const menus = document.querySelectorAll(menuClass);
+  const contents = document.querySelectorAll(contentClass);
 
-// document.addEventListener('click', (e) => {
-//   if (e.target === post3DotBtn) {
-//     post3DotMenu.classList.toggle(remove);
+  buttons.forEach((btn, index) => {
+    const menu = menus[index];
+    const content = contents[index];
 
-//     if (!post3DotMenu.classList.contains('hidden')) {
-//       postOnHoverContent.classList.remove('hidden');
-//       postOnHoverContent.classList.add('flex');
-//     } else {
-//       postOnHoverContent.classList.add('hidden');
-//       postOnHoverContent.classList.remove('flex');
-//     }
-//   } else if (e.target === post3DotMenu || post3DotMenu.contains(e.target)) {
-//     // on menu, do nothing
-//   } else {
-//     post3DotMenu.classList.add(remove);
-//     postOnHoverContent.classList.add('hidden');
-//     postOnHoverContent.classList.remove('flex');
-//   }
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
 
-// });
+      // Close the currently open menu, if any
+      if (openMenu && openMenu !== menu) {
+        openMenu.classList.add('hidden');
+        openContent.classList.add('hidden');
+        openContent.classList.remove('flex');
+      }
 
+      // Toggle the current menu
+      menu.classList.toggle('hidden');
 
-const post3DotBtns = document.querySelectorAll('.post-3dot-btn');
-const post3DotMenus = document.querySelectorAll('.post-3dot-menu');
-const postOnHoverContents = document.querySelectorAll('.post-onhover-content');
-
-post3DotBtns.forEach((btn, index) => {
-  const post3DotMenu = post3DotMenus[index];
-  const postOnHoverContent = postOnHoverContents[index];
-
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation(); 
-
-    // Close all other menus
-    post3DotMenus.forEach((menu, i) => {
-      if (i !== index) {
-        menu.classList.add('hidden');
-        postOnHoverContents[i].classList.add('hidden');
-        postOnHoverContents[i].classList.remove('flex');
+      if (!menu.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        content.classList.add('flex');
+        openMenu = menu;
+        openContent = content;
+      } else {
+        content.classList.add('hidden');
+        content.classList.remove('flex');
+        openMenu = null;
+        openContent = null;
       }
     });
 
-    // Toggle the current menu
-    post3DotMenu.classList.toggle('hidden');
-
-    if (!post3DotMenu.classList.contains('hidden')) {
-      postOnHoverContent.classList.remove('hidden');
-      postOnHoverContent.classList.add('flex');
-    } else {
-      postOnHoverContent.classList.add('hidden');
-      postOnHoverContent.classList.remove('flex');
-    }
+    document.addEventListener('click', (e) => {
+      if (e.target !== btn && e.target !== menu && !menu.contains(e.target)) {
+        menu.classList.add('hidden');
+        content.classList.add('hidden');
+        content.classList.remove('flex');
+        openMenu = null;
+        openContent = null;
+      }
+    });
   });
+}
 
-  document.addEventListener('click', (e) => {
-    if (e.target !== btn && e.target !== post3DotMenu && !post3DotMenu.contains(e.target)) {
-      post3DotMenu.classList.add('hidden');
-      postOnHoverContent.classList.add('hidden');
-      postOnHoverContent.classList.remove('flex');
-    }
-  });
-});
+// post 3 dot menu
+handleMenuToggle('.post-3dot-btn', '.post-3dot-menu', '.post-onhover-content');
+// post share menu
+handleMenuToggle('.post-share-btn', '.post-share-menu', '.post-onhover-content');
+
+
+
+
+
+////////////test
+
 
