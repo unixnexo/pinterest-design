@@ -358,7 +358,7 @@
                         </div>
                     </div>
                     <!-- menu -->
-                    <div id="menu2" data-state-menu="inactive" class="menu absolute top-[61px] -left-[253px] w-96 h-[88vh] bg-white rounded-2xl drop-shadow-2xl">
+                    <div id="menu2" data-state-menu="inactive" class="menu absolute hidden top-[61px] -left-[253px] w-96 h-[88vh] bg-white rounded-2xl drop-shadow-2xl">
                         <!-- header -->
                         <div class="relative p-6 text-center">
                             <span>Inbox</span>
@@ -368,7 +368,7 @@
                                 </svg>
                             </div>
                             <!-- 3dot menu -->
-                            <div id="inbox-3dot-menu" class="absolute hidden peer-[.is-open]:block top-[66px] z-20 right-1 bg-white rounded-xl py-2 px-2 shadow shadow-[#aaa9a9]">
+                            <div id="inbox-3dot-menu" class="absolute hidden peer-[.is-open]:block top-[66px] z-20 right-1 bg-white rounded-xl py-2 px-2 pinterest-shadow">
                                 <p class="bg-[#E9E9E9] rounded-xl px-3 py-2 pr-10 cursor-pointer">Mark all as read</p>
                             </div>
                         </div>
@@ -418,13 +418,77 @@
                 </div>
 
                 <!-- down arrow icon -->
-                <div>
-                    <div class="size-[25px] group cursor-pointer">
-                        <svg height="12" fill="#767676" viewBox="0 0 24 24" width="12">
+                <div class="select-none">
+                    <div data-menu="menu3" data-state="inactive" class="size-[25px] group cursor-pointer menu-btn *:pointer-events-none data-[state=inactive]:fill-[#767676] data-[state=active]:fill-[#000000]">
+                        <svg height="12" viewBox="0 0 24 24" width="12">
                             <path d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0"></path>
                         </svg>
-                        <div class="absolute hidden group-hover:block top-8 right-0 bg-black text-white rounded-md p-1.5 text-xs whitespace-nowrap">
+                        <div class="absolute hidden z-20 select-none group-hover:block top-8 right-0 bg-black text-white rounded-md p-1.5 text-xs whitespace-nowrap">
                             <span>Accounts and more options</span>
+                        </div>
+                    </div>
+                    <!-- menu -->
+                    <div id="menu3" data-state-menu="inactive" class="menu absolute hidden top-8 right-px max-h-[90vh] overflow-y-auto bg-white rounded-xl pinterest-shadow p-2 whitespace-nowrap">
+                        <p class="text-black/50 text-xs px-2 mt-2">Currently in</p>
+                        <!-- profile card -->
+                        <div class="flex items-center mt-2 space-x-2 bg-[#E9E9E9] rounded-lg p-2">
+                            <div class="size-[60px] overflow-hidden rounded-full">
+                                <img src="./img/prof.png" alt="profile picture" />
+                            </div>
+                            <div class="flex flex-col *:text-sm [&>*:not(:first-child)]:text-black/50">
+                                <p>Pussycat</p>
+                                <p>Personal</p>
+                                <p>pussy.cat@gmail.com  </p>
+                            </div>
+                            <div class="pl-1">
+                                <svg height="12" viewBox="0 0 24 24" width="12">
+                                    <path d="M9 22 .73 13.75a2.5 2.5 0 1 1 3.54-3.53L9 14.94l10.73-10.7a2.5 2.5 0 0 1 3.54 3.52z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- your account -->
+                        <div>
+                            <p class="text-black/50 text-xs mt-5 mb-2 mx-2">Your accounts</p>
+                            <ul class="*:p-2 hover:*:bg-[#E9E9E9] *:rounded-lg">
+                                <li>Add account</li>
+                                <li>Convert to business</li>
+                            </ul>
+                        </div>
+                        <!-- more options -->
+                        <div>
+                            <p class="text-black/50 text-xs mt-5 mb-2 mx-2">More options</p>
+                            <ul class="*:p-2 hover:*:bg-[#E9E9E9] *:rounded-lg">
+                                <li>Settings</li>
+                                <li>Home feed tuner</li>
+                                <li>Install the Windows app</li>
+                                <li>Reports and violations center</li>
+                                <li>Your privacy rights</li>
+                                <li class="flex justify-between items-center">
+                                    Help center
+                                    <svg height="12" viewBox="0 0 24 24" width="12">
+                                        <path d="M20.97 12a2 2 0 0 1-1.99-2V7.81l-7.07 7.1a2 2 0 1 1-2.83-2.83L16.16 5h-2.17a2 2 0 0 1 0-4H23l-.03 9a2 2 0 0 1-2 2M6.75 4a1.25 1.25 0 0 1 0 2.5H3.5v14h14v-3.26a1.25 1.25 0 1 1 2.5 0v4.51c0 .7-.56 1.25-1.25 1.25H2.25C1.56 23 1 22.44 1 21.75V5.25C1 4.56 1.56 4 2.25 4z"></path>
+                                    </svg>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    Terms of service
+                                    <svg height="12" viewBox="0 0 24 24" width="12">
+                                        <path d="M20.97 12a2 2 0 0 1-1.99-2V7.81l-7.07 7.1a2 2 0 1 1-2.83-2.83L16.16 5h-2.17a2 2 0 0 1 0-4H23l-.03 9a2 2 0 0 1-2 2M6.75 4a1.25 1.25 0 0 1 0 2.5H3.5v14h14v-3.26a1.25 1.25 0 1 1 2.5 0v4.51c0 .7-.56 1.25-1.25 1.25H2.25C1.56 23 1 22.44 1 21.75V5.25C1 4.56 1.56 4 2.25 4z"></path>
+                                    </svg>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    Privacy policy
+                                    <svg height="12" viewBox="0 0 24 24" width="12">
+                                        <path d="M20.97 12a2 2 0 0 1-1.99-2V7.81l-7.07 7.1a2 2 0 1 1-2.83-2.83L16.16 5h-2.17a2 2 0 0 1 0-4H23l-.03 9a2 2 0 0 1-2 2M6.75 4a1.25 1.25 0 0 1 0 2.5H3.5v14h14v-3.26a1.25 1.25 0 1 1 2.5 0v4.51c0 .7-.56 1.25-1.25 1.25H2.25C1.56 23 1 22.44 1 21.75V5.25C1 4.56 1.56 4 2.25 4z"></path>
+                                    </svg>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    Be a beta tester
+                                    <svg height="12" viewBox="0 0 24 24" width="12">
+                                        <path d="M20.97 12a2 2 0 0 1-1.99-2V7.81l-7.07 7.1a2 2 0 1 1-2.83-2.83L16.16 5h-2.17a2 2 0 0 1 0-4H23l-.03 9a2 2 0 0 1-2 2M6.75 4a1.25 1.25 0 0 1 0 2.5H3.5v14h14v-3.26a1.25 1.25 0 1 1 2.5 0v4.51c0 .7-.56 1.25-1.25 1.25H2.25C1.56 23 1 22.44 1 21.75V5.25C1 4.56 1.56 4 2.25 4z"></path>
+                                    </svg>
+                                </li>
+                                <li>Log out</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

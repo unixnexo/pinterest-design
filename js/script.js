@@ -118,17 +118,17 @@ document.addEventListener('click', (e) => {
       }
     });
 
+    inactiveUiBtn();
     if (menu.getAttribute('data-state-menu') === 'inactive') {
       menu.classList.remove(removeClass);
       menu.setAttribute('data-state-menu', 'active');
+      btn.setAttribute('data-state', 'active');
     } else {
       menu.classList.add(removeClass);
       menu.setAttribute('data-state-menu', 'inactive');
+      btn.setAttribute('data-state', 'inactive');
     }
 
-    // inactive all btns & active the current one
-    inactiveUiBtn();
-    btn.setAttribute('data-state', 'active');
   } 
   else if (e.target.closest('.menu')) {
     // Clicked inside a menu, do nothing
@@ -166,11 +166,9 @@ function threeDotMenu (el) {
 }
 
 
-
-
-
-
-////////////test
+/**
+ * inbox 3 dot menu
+ */
 const inbox3Dot = document.getElementById('inbox-3-dots');
 const inbox3DotMenu = document.getElementById('inbox-3dot-menu');
 document.addEventListener('click', (e) => {
@@ -182,3 +180,8 @@ document.addEventListener('click', (e) => {
   inbox3Dot.classList.remove('is-open');
  }
 });
+
+
+
+
+////////////test
