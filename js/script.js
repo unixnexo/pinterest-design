@@ -98,6 +98,42 @@ searchInput.addEventListener('blur', () => {
 });
 
 
+/**
+ * menus for notification / messages / settings - on the right side of the header
+ */
+document.addEventListener('click', (e) => {
+  const removeClass = 'hidden'; 
 
-////// test
+  if (e.target.classList.contains('menu-btn')) {
+    const menuId = e.target.getAttribute('data-menu');
+    const menu = document.getElementById(menuId);
+    menu.classList.toggle(removeClass);
+  } 
+  else if (e.target.closest('.menu')) {
+    // Clicked inside a menu, do nothing
+  } 
+  else {
+    document.querySelectorAll('.menu').forEach(menu => {
+      menu.classList.add(removeClass);
+    });
+  }
+});
 
+
+/**
+ * notification menu > 3 dots > menu
+ */
+function threeDotMenu (el) {
+  el.classList.toggle('is-open');
+  const grandfather = document.querySelectorAll('.three-dot-menu-biggest-parent')
+  
+  grandfather.forEach(menu => {
+    menu.addEventListener('mouseleave', () => {
+      el.classList.remove('is-open');
+    });
+  });
+  
+}
+
+
+////////////test
