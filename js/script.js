@@ -205,9 +205,9 @@ document.addEventListener('click', (e) => {
 });
 
 
-/**
- * menus on post
- */
+// /**
+//  * menus on post
+//  */
 let openMenu = null;
 let openContent = null;
 
@@ -228,6 +228,19 @@ function handleMenuToggle(btnClass, menuClass, contentClass) {
         openMenu.classList.add('hidden');
         openContent.classList.add('hidden');
         openContent.classList.remove('flex');
+      }
+
+      // Calculate the distances
+      const clickX = e.clientX;
+      const viewportWidth = window.innerWidth;
+      const distanceToLeftEdge = clickX;
+      const distanceToRightEdge = viewportWidth - clickX;
+
+      // Adjust the menu position based on distance
+      if (distanceToLeftEdge < distanceToRightEdge) {
+        menu.style.left = '-150px';
+      } else {
+        menu.style.left = '-300px';
       }
 
       // Toggle the current menu
@@ -268,5 +281,3 @@ handleMenuToggle('.post-share-btn', '.post-share-menu', '.post-onhover-content')
 
 
 ////////////test
-
-
