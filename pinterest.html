@@ -177,6 +177,7 @@
 
             </div>
 
+            <!-- right hand side menus -->
             <div class="flex items-center *:relative first:[&>*>*]:relative *:rounded-full hover:*:bg-[#0000000f] *:flex *:items-center *:justify-center first:[&>*>*]:flex first:[&>*>*]:items-center first:[&>*>*]:justify-center">
 
                 <!-- ring bell icon -->
@@ -754,17 +755,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -844,9 +847,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -962,17 +967,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -1052,9 +1059,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -1170,17 +1179,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -1260,9 +1271,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -1378,17 +1391,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -1468,9 +1483,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -1586,17 +1603,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -1676,9 +1695,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -1794,17 +1815,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -1884,9 +1907,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -2002,17 +2027,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -2092,9 +2119,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -2210,17 +2239,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -2300,9 +2331,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -2418,17 +2451,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -2508,9 +2543,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -2626,17 +2663,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -2716,9 +2755,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -2834,17 +2875,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -2924,9 +2967,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -3042,17 +3087,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -3132,9 +3179,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -3250,17 +3299,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -3340,9 +3391,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -3458,17 +3511,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -3548,9 +3603,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -3666,17 +3723,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -3756,9 +3815,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -3874,17 +3935,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -3964,9 +4027,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -4082,17 +4147,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -4172,9 +4239,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -4290,17 +4359,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -4380,9 +4451,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -4498,17 +4571,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -4588,9 +4663,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -4706,17 +4783,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -4796,9 +4875,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -4914,17 +4995,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -5004,9 +5087,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -5122,17 +5207,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -5212,9 +5299,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -5330,17 +5419,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -5420,9 +5511,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
@@ -5538,17 +5631,19 @@
                         </div>
 
                         <div>
-                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full">Save</button>
+                            <button class="bg-[#E60023] hover:bg-[#B60000] py-3 px-4 rounded-full active:scale-90 transition-transform will-change-transform">Save</button>
                         </div>
                     </div>
 
                     <!-- bottom level -->
-                    <div class="*:bg-white *:rounded-full *:size-8 [&>*>svg]:mx-auto self-end mr-3 mb-2 space-x-1">
+                    <div class="self-end mr-3 mb-2 space-x-1">
                         <!-- share -->
                         <button class="relative post-share-btn">
-                            <svg height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M10 7.66 8.81 8.84a2 2 0 0 1-2.84-2.82l6-6.02L18 6.01a2 2 0 0 1-2.82 2.83l-1.2-1.19v6.18a2 2 0 0 1-4 0zM19 16a2 2 0 0 1 4 0v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 4 0v4h14z"></path>\
+                                </svg>
+                            </div>
                             <!-- menu -->
                             <div class="post-share-menu absolute hidden top-10 z-20 rounded-2xl text-black bg-white py-5 whitespace-nowrap px-7">
                                 <p class="mb-4">Send on Pinterest</p>
@@ -5628,9 +5723,11 @@
                         </button>
                         <!-- 3 dot -->
                         <button class="relative post-3dot-btn">
-                            <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
-                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
-                            </svg>
+                            <div class="flex justify-center items-center bg-white rounded-full size-8 active:scale-90 active:bg-[#E1E1E1] transition-transform will-change-transform">
+                                <svg class="pointer-events-none" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6m18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                                </svg>
+                            </div>
                             <div class="post-3dot-menu hidden absolute top-10 -left-[150px] z-20 rounded-lg text-black bg-white p-3 whitespace-nowrap">
                                 <p class="font-light mb-1 px-2">This Pin was inspired by your recent activity</p>
                                 <ul class="text-start hover:*:bg-[#E9E9E9] *:p-2 *:rounded-lg">
