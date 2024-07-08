@@ -329,12 +329,5 @@ window.addEventListener('scroll', function() {
 
 
 ////////////test
-document.addEventListener('click', (e) => {
-  if (e.target.tagName.toLowerCase() === 'button') {
-    console.log('btn');
-  } else {
-    console.log(e.target);
-  }
-});
 
 
