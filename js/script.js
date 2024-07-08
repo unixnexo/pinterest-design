@@ -237,10 +237,18 @@ function handleMenuToggle(btnClass, menuClass, contentClass) {
       const distanceToRightEdge = viewportWidth - clickX;
 
       // Adjust the menu position based on distance
-      if (distanceToLeftEdge < distanceToRightEdge) {
-        menu.style.left = '-150px';
+      if (!menu.classList.contains('post-save-menu')) {
+        if (distanceToLeftEdge < distanceToRightEdge) {
+          menu.style.left = '-150px';
+        } else {
+          menu.style.left = '-300px';
+        }
       } else {
-        menu.style.left = '-300px';
+        if (distanceToLeftEdge < distanceToRightEdge) {
+          menu.style.left = '-15px';
+        } else {
+          menu.style.left = '-130px';
+        }
       }
 
       // Toggle the current menu
@@ -281,3 +289,4 @@ handleMenuToggle('.post-share-btn', '.post-share-menu', '.post-onhover-content')
 
 
 ////////////test
+handleMenuToggle('.post-save-btn', '.post-save-menu', '.post-onhover-content');

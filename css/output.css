@@ -558,6 +558,10 @@ video {
   pointer-events: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -573,6 +577,10 @@ video {
 .inset-x-4 {
   left: 1rem;
   right: 1rem;
+}
+
+.-bottom-12 {
+  bottom: -3rem;
 }
 
 .-left-\[140px\] {
@@ -593,6 +601,10 @@ video {
 
 .-right-3 {
   right: -0.75rem;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .left-10 {
@@ -659,12 +671,24 @@ video {
   top: 18px;
 }
 
+.top-\[44px\] {
+  top: 44px;
+}
+
 .top-\[61px\] {
   top: 61px;
 }
 
 .top-\[66px\] {
   top: 66px;
+}
+
+.-left-0 {
+  left: -0px;
+}
+
+.-left-5 {
+  left: -1.25rem;
 }
 
 .z-20 {
@@ -804,12 +828,20 @@ video {
   height: 100%;
 }
 
+.h-2\/3 {
+  height: 66.666667%;
+}
+
 .h-3\/4 {
   height: 75%;
 }
 
 .h-\[48px\] {
   height: 48px;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[72px\] {
@@ -838,6 +870,10 @@ video {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-\[360px\] {
+  width: 360px;
 }
 
 .w-\[48px\] {
@@ -1156,9 +1192,19 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-5 {
@@ -1169,6 +1215,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pl-1 {
@@ -1625,6 +1675,10 @@ img {
   outline-style: solid;
 }
 
+.group\/save:hover .group-hover\/save\:block {
+  display: block;
+}
+
 .group\/title:hover .group-hover\/title\:block {
   display: block;
 }
@@ -1650,6 +1704,11 @@ img {
 .group:hover .group-hover\:rotate-\[20deg\] {
   --tw-rotate: 20deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group\/save:hover .group-hover\/save\:bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .group\/\33 dot:hover .group-hover\/3dot\:opacity-100 {
