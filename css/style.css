@@ -11,6 +11,13 @@
   width: 237px;
 }
 
+@media (max-width: 500px) {
+  .grid-item {
+    width: calc(49% - 2px);
+  }
+}
+
+
 /* overlay when searching */
 main::before {
   content: none;

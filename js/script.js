@@ -1,12 +1,27 @@
 /**
  * masonry js
  */
-const grid = document.querySelector('.grid');
-const masonry = new Masonry( grid, {
-    itemSelector: '.grid-item',
-    gutter: 15,
-    isFitWidth: true
-});
+// document.addEventListener('DOMContentLoaded', function() { // layout won't be populated well
+  const grid = document.querySelector('.grid');
+
+  function getMasonryOptions() {
+    return {
+      itemSelector: '.grid-item',
+      gutter: window.innerWidth <= 500 ? 2 : 15,
+      fitWidth: true,
+      horizontalOrder: true,
+    };
+  }
+
+  let masonry = new Masonry(grid, getMasonryOptions());
+
+  function adjustMasonryGutter() {
+    masonry.destroy();
+    masonry = new Masonry(grid, getMasonryOptions());
+  }
+
+  // window.addEventListener('resize', adjustMasonryGutter); // causes jumps on phone
+// });
 
 
 /**
