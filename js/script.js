@@ -99,7 +99,7 @@ searchInput.addEventListener('blur', () => {
 
 
 /**
- * menus for notification / messages / settings - on the right side of the header
+ * menus for notification / messages / settings / qs / ... - mostly on the right side of the header
  * will change state for both menus & btns
  */
 document.addEventListener('click', (e) => {

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  outline: 2;
+  outline-width: 3px;
   outline-color: #7FC1FF;
 }
 
