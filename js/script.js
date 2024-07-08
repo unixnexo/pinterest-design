@@ -302,7 +302,33 @@ handleMenuToggle('.post-share-btn', '.post-share-menu', '.post-onhover-content')
 handleMenuToggle('.post-save-btn', '.post-save-menu', '.post-onhover-content');
 
 
+/**
+ * scrollable list at top - < sm screens
+ */
+const topListSmSc = document.getElementById('top-list-sm');
+const hideTopListSmSc = '-translate-y-20';
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollDifference = Math.abs(scrollTop - lastScrollTop);
+
+  // Only proceed if scrolled more than 100 pixels
+  if (scrollDifference > 100) {
+    if (scrollTop > lastScrollTop) {
+      console.log('Scrolled down');
+      topListSmSc.classList.add(hideTopListSmSc);
+    } else {
+      console.log('Scrolled up');
+      topListSmSc.classList.remove(hideTopListSmSc);
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  }
+});
 
 
 
 ////////////test
+
+
+

@@ -9,10 +9,10 @@
 </head>
 <body class="font-medium">
 
-    <header class="bg-white z-[150] sticky top-0">
+    <header class="hidden sm:block bg-white z-[150] sticky top-0">
 
         <!-- > sm screens -->
-        <nav class="hidden sm:flex p-4">
+        <nav class="flex p-4">
 
             <div class="flex items-center">
                 <!-- pinterest icon -->
@@ -537,9 +537,13 @@
 
         </nav>
 
-        <!-- < sm screens -->
-        <div class="block sm:hidden pt-7 px-4">
-            <ul class="flex flex-nowrap whitespace-nowrap pb-3 overflow-x-auto scrollbar-hide space-x-6 *:cursor-pointer font-bold">
+    </header>
+    
+    <main class="relative">
+
+        <!-- scrollable list - < sm screens -->
+        <div id="top-list-sm" class="block sm:hidden pt-5 pb-3.5 px-4 mb-5 bg-white sticky top-0 z-30 transition-transform duration-700 will-change-auto">
+            <ul class="flex flex-nowrap whitespace-nowrap pb-3 overflow-x-auto scrollbar-hide space-x-8 *:cursor-pointer font-bold">
                 <li class="underline decoration-2 underline-offset-8">All</li>
                 <li>Wallpapers</li>
                 <li>Amazed by</li>
@@ -550,12 +554,8 @@
             </ul>
         </div>
 
-    </header>
-    
-    <main class="relative">
-
         <!-- more ideas for ... - slider - > sm screens -->
-        <div id="moreIdeaSecCon" class="hidden sm:flex relative items-center justify-center mx-3 mt-10 space-x-2 overflow-hidden">
+        <div id="moreIdeaSecCon" class="hidden sm:flex relative items-center justify-center mx-3 mt-10 space-x-2 overflow-hidden mb-10">
             <!-- left btn -->
             <button id="scrollLeft" class="absolute flex justify-center items-center left-10 z-20 size-[48px] rounded-full bg-white/80 hover:bg-white">
                 <svg height="16" viewBox="0 0 24 24" width="16">
@@ -651,7 +651,7 @@
 
 
         <!-- masonry grid -->
-        <div class="grid mt-10 [&>*>img]:rounded-[20px] [&>*>img]:w-[100%] mx-auto *:mb-4 *:cursor-zoom-in">
+        <div class="grid [&>*>img]:rounded-[20px] [&>*>img]:w-[100%] mx-auto *:mb-4 *:cursor-zoom-in">
 
             <div class="grid-item relative group">
                 <img src="./img/1.jpg" alt="Pinterest images" />
