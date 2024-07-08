@@ -283,10 +283,11 @@ function handleMenuToggle(btnClass, menuClass, contentClass) {
 handleMenuToggle('.post-3dot-btn', '.post-3dot-menu', '.post-onhover-content');
 // post share menu
 handleMenuToggle('.post-share-btn', '.post-share-menu', '.post-onhover-content');
+// post save menu
+handleMenuToggle('.post-save-btn', '.post-save-menu', '.post-onhover-content');
 
 
 
 
 
 ////////////test
-handleMenuToggle('.post-save-btn', '.post-save-menu', '.post-onhover-content');
