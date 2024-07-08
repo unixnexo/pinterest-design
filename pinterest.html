@@ -11,7 +11,8 @@
 
     <header class="bg-white z-[150] sticky top-0">
 
-        <nav class="flex p-4">
+        <!-- > sm screens -->
+        <nav class="hidden sm:flex p-4">
 
             <div class="flex items-center">
                 <!-- pinterest icon -->
@@ -535,6 +536,19 @@
             </div>
 
         </nav>
+
+        <!-- < sm screens -->
+        <div class="pt-7 px-4">
+            <ul class="flex flex-nowrap whitespace-nowrap pb-3 overflow-x-auto scrollbar-hide space-x-6 *:cursor-pointer font-bold">
+                <li class="underline decoration-2 underline-offset-8">All</li>
+                <li>Wallpapers</li>
+                <li>Amazed by</li>
+                <li>Skating</li>
+                <li>Not useless</li>
+                <li>Girly photos</li>
+                <li>Pussy cat</li>
+            </ul>
+        </div>
 
     </header>
     
@@ -5634,8 +5648,8 @@
         </div>
 
 
-        <!-- more q -->
-        <div class="fixed bottom-6 right-6">
+        <!-- more q - > sm screens -->
+        <div class="hidden sm:block fixed bottom-6 right-6">
             <div class="group">
                 <div data-menu="menu4" data-state="inactive" class="menu-btn bg-white rounded-full p-4 cursor-pointer *:pointer-events-none select-none">
                     <svg height="24" viewBox="0 0 24 24" width="24">
@@ -5676,6 +5690,39 @@
                     <p>Your Privacy Rights</p>
                     <p>Terms</p>
                 </div>
+            </div>
+        </div>
+
+        <!-- < sm screens - menu -->
+        <div class="fixed bottom-0 w-full bg-white pinterest-shadow">
+            <div class="flex justify-around items-center pt-1 pb-3">
+
+                <div class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
+                        <path d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"></path>
+                    </svg>
+                    <p class="text-xs">Home</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#AAACAE" x="0px" y="0px" width="32" height="32" viewBox="0 0 72 72">
+                        <path d="M 31 11 C 19.973 11 11 19.973 11 31 C 11 42.027 19.973 51 31 51 C 34.974166 51 38.672385 49.821569 41.789062 47.814453 L 54.726562 60.751953 C 56.390563 62.415953 59.088953 62.415953 60.751953 60.751953 C 62.415953 59.087953 62.415953 56.390563 60.751953 54.726562 L 47.814453 41.789062 C 49.821569 38.672385 51 34.974166 51 31 C 51 19.973 42.027 11 31 11 z M 31 19 C 37.616 19 43 24.384 43 31 C 43 37.616 37.616 43 31 43 C 24.384 43 19 37.616 19 31 C 19 24.384 24.384 19 31 19 z"></path>
+                    </svg>
+                    <p class="text-xs">Search</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#AAACAE" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                    </svg>                      
+                    <p class="text-xs">Inbox</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="./img/prof.png" class="size-[28px] rounded-full" alt="profile picture" />                     
+                    <p class="text-xs">Saved</p>
+                </div>
+
             </div>
         </div>
 
