@@ -3,7 +3,7 @@ name: minify css
 on:
   push:
     branches:
-      - master 
+      - master
 
 jobs:
   build:
@@ -23,3 +23,11 @@ jobs:
 
     - name: Build CSS for production
       run: npm run prod
+
+    - name: Commit and push changes
+      run: |
+        git add ./css/output.css
+        git commit -m "Minify CSS"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
