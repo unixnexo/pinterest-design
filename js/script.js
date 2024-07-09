@@ -1,4 +1,13 @@
 /**
+ * hide spinner and show content
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('spinner').classList.add('hidden');
+  document.getElementsByTagName('main')[0].classList.remove('opacity-0');
+});
+
+
+/**
  * masonry js
  */
 // document.addEventListener('DOMContentLoaded', function() { // layout won't be populated well
@@ -316,10 +325,8 @@ window.addEventListener('scroll', function() {
   // Only proceed if scrolled more than 100 pixels
   if (scrollDifference > 100) {
     if (scrollTop > lastScrollTop) {
-      console.log('Scrolled down');
       topListSmSc.classList.add(hideTopListSmSc);
     } else {
-      console.log('Scrolled up');
       topListSmSc.classList.remove(hideTopListSmSc);
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;

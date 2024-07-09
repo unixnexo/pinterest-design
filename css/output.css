@@ -554,6 +554,18 @@ video {
   --tw-contain-style:  ;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -705,6 +717,14 @@ video {
 
 .top-\[66px\] {
   top: 66px;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.left-1\/2 {
+  left: 50%;
 }
 
 .z-20 {
@@ -894,6 +914,10 @@ video {
   height: 100%;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .max-h-\[88vh\] {
   max-height: 88vh;
 }
@@ -934,6 +958,10 @@ video {
   width: 100%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -955,6 +983,42 @@ video {
 .rotate-12 {
   --tw-rotate: 12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {
@@ -1193,6 +1257,10 @@ video {
   background-color: rgb(255 255 255 / 0.8);
 }
 
+.fill-blue-600 {
+  fill: #2563eb;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1373,6 +1441,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1431,12 +1504,22 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-150 {
   transition-duration: 150ms;
 }
 
 .duration-700 {
   transition-duration: 700ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .will-change-auto {
@@ -1895,6 +1978,13 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .md\:hidden {
     display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
   }
 }
 
