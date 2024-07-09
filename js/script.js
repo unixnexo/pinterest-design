@@ -10,27 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * masonry js
  */
-// document.addEventListener('DOMContentLoaded', function() { // layout won't be populated well
-  const grid = document.querySelector('.grid');
+  // const grid = document.querySelector('.grid');
 
-  function getMasonryOptions() {
-    return {
-      itemSelector: '.grid-item',
-      gutter: window.innerWidth <= 500 ? 2 : 15,
-      fitWidth: true,
-      horizontalOrder: true,
-    };
-  }
+  // function getMasonryOptions() {
+  //   return {
+  //     itemSelector: '.grid-item',
+  //     gutter: window.innerWidth <= 500 ? 2 : 15,
+  //     fitWidth: true,
+  //     horizontalOrder: true,
+  //   };
+  // }
 
-  let masonry = new Masonry(grid, getMasonryOptions());
+  // let masonry = new Masonry(grid, getMasonryOptions());
 
-  function adjustMasonryGutter() {
-    masonry.destroy();
-    masonry = new Masonry(grid, getMasonryOptions());
-  }
+  // function adjustMasonryGutter() {
+  //   masonry.destroy();
+  //   masonry = new Masonry(grid, getMasonryOptions());
+  // }
 
-  // window.addEventListener('resize', adjustMasonryGutter); // causes jumps on phone
-// });
 
 
 /**
@@ -336,4 +333,22 @@ window.addEventListener('scroll', function() {
 
 
 ////////////test
+let posts = document.getElementsByTagName('img');
+imagesLoaded(posts, function() {
+  console.log('loaded all');
+  const grid = document.querySelector('.grid');
 
+  function getMasonryOptions() {
+    return {
+      itemSelector: '.grid-item',
+      gutter: window.innerWidth <= 500 ? 2 : 15,
+      fitWidth: true,
+      horizontalOrder: true,
+    };
+  }
+
+  let masonry = new Masonry(grid, getMasonryOptions());
+
+  masonry.destroy();
+  masonry = new Masonry(grid, getMasonryOptions());
+});
