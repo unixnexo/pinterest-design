@@ -7,7 +7,7 @@
 </p>
 
 # live demo
-[live demo](unixnexo.github.io/pinterest-design/)
+[live demo](https://unixnexo.github.io/pinterest-design/)
 
 # Wanna run locally?
 clone the ripo and run:
