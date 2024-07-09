@@ -347,8 +347,6 @@ imagesLoaded(posts, function() {
     };
   }
 
-  let masonry = new Masonry(grid, getMasonryOptions());
+  new Masonry(grid, getMasonryOptions());
 
-  masonry.destroy();
-  masonry = new Masonry(grid, getMasonryOptions());
 });
