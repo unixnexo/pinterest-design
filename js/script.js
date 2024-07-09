@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * masonry js
  */
-// document.addEventListener('DOMContentLoaded', function() { // layout won't be populated well
+document.addEventListener('DOMContentLoaded', function() { // layout won't be populated well
   const grid = document.querySelector('.grid');
 
   function getMasonryOptions() {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // window.addEventListener('resize', adjustMasonryGutter); // causes jumps on phone
-// });
+});
 
 
 /**
