@@ -10,6 +10,6 @@
 [live demo](https://unixnexo.github.io/pinterest-design/)
 
 # Wanna run locally?
-clone the ripo and run:
+clone the repo and run:
 
     npm install
