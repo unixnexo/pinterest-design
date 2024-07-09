@@ -337,6 +337,7 @@ window.addEventListener('scroll', function() {
 
 ////////////test
 document.addEventListener('DOMContentLoaded', () => {
+  masonry.destroy();
   masonry.layout();
 });
 
