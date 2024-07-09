@@ -27,6 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
   //   masonry.destroy();
   //   masonry = new Masonry(grid, getMasonryOptions());
   // }
+let posts = document.getElementsByTagName('img');
+imagesLoaded(posts, function() {
+  console.log('loaded all');
+  const grid = document.querySelector('.grid');
+
+  function getMasonryOptions() {
+    return {
+      itemSelector: '.grid-item',
+      gutter: window.innerWidth <= 500 ? 2 : 15,
+      fitWidth: true,
+      horizontalOrder: true,
+    };
+  }
+
+  new Masonry(grid, getMasonryOptions());
+
+});
 
 
 
@@ -333,20 +350,4 @@ window.addEventListener('scroll', function() {
 
 
 ////////////test
-let posts = document.getElementsByTagName('img');
-imagesLoaded(posts, function() {
-  console.log('loaded all');
-  const grid = document.querySelector('.grid');
 
-  function getMasonryOptions() {
-    return {
-      itemSelector: '.grid-item',
-      gutter: window.innerWidth <= 500 ? 2 : 15,
-      fitWidth: true,
-      horizontalOrder: true,
-    };
-  }
-
-  new Masonry(grid, getMasonryOptions());
-
-});
