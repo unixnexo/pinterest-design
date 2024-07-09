@@ -1,35 +1,12 @@
 /**
- * hide spinner and show content
- */
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('spinner').classList.add('hidden');
-  document.getElementsByTagName('main')[0].classList.remove('opacity-0');
-});
-
-
-/**
  * masonry js
  */
-  // const grid = document.querySelector('.grid');
-
-  // function getMasonryOptions() {
-  //   return {
-  //     itemSelector: '.grid-item',
-  //     gutter: window.innerWidth <= 500 ? 2 : 15,
-  //     fitWidth: true,
-  //     horizontalOrder: true,
-  //   };
-  // }
-
-  // let masonry = new Masonry(grid, getMasonryOptions());
-
-  // function adjustMasonryGutter() {
-  //   masonry.destroy();
-  //   masonry = new Masonry(grid, getMasonryOptions());
-  // }
 let posts = document.getElementsByTagName('img');
 imagesLoaded(posts, function() {
-  console.log('loaded all');
+  // hide spinner and show content
+  document.getElementById('spinner').classList.add('hidden');
+  document.getElementsByTagName('main')[0].classList.remove('opacity-0');
+
   const grid = document.querySelector('.grid');
 
   function getMasonryOptions() {
@@ -40,11 +17,8 @@ imagesLoaded(posts, function() {
       horizontalOrder: true,
     };
   }
-
   new Masonry(grid, getMasonryOptions());
-
 });
-
 
 
 /**
